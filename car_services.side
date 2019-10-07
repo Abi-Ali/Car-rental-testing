@@ -649,6 +649,38 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "d4dd21b2-87de-4137-85c7-e143d01eed58",
+    "name": "admin_features",
+    "commands": [{
+      "id": "1ac863c7-2114-489b-a4ab-16095a29e0d7",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b0c892d-10ae-4121-98ea-248c41fec873",
+      "comment": "",
+      "command": "run",
+      "target": "login_positive_admin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf07bf4c-f224-417a-8e62-cc5942d7d737",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[2]/div/div/ul/li[1]/a[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9242f2aa-96bd-4200-aa5d-eadaec86f1fe",
+      "comment": "",
+      "command": "executeScript",
+      "target": "window.history.back()",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "860c0bd6-f3c2-4876-acea-df40e99d83d6",
