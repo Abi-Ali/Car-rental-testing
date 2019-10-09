@@ -42,6 +42,13 @@
       "targets": [],
       "value": "password"
     }, {
+      "id": "b13bfe60-614e-4f90-ab0e-7efe01613d83",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "2f90910f-1a04-4c0b-a2c3-70e5ff16f6d5",
       "comment": "",
       "command": "click",
@@ -53,6 +60,13 @@
       "comment": "",
       "command": "assertTitle",
       "target": "Admin Page",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28f9ae3c-907d-45c6-b7cb-674517f59fe9",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
       "targets": [],
       "value": ""
     }]
@@ -166,6 +180,13 @@
       "target": "id=submit",
       "targets": [],
       "value": ""
+    }, {
+      "id": "e6398316-a6de-487b-b937-08a00bea8bc8",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "44eb997b-76d0-46a8-bfce-1f1bd7b7e2b3",
@@ -243,11 +264,11 @@
     }]
   }, {
     "id": "50f80810-0e5c-4c60-8af7-4031462ee3b7",
-    "name": "main_test",
+    "name": "main_test_customer",
     "commands": [{
       "id": "bd396cc9-cca7-42a1-bd05-c82165ff4200",
       "comment": "",
-      "command": "setSpeed",
+      "command": "pause",
       "target": "1000",
       "targets": [],
       "value": ""
@@ -325,6 +346,13 @@
       "target": "id=submit",
       "targets": [],
       "value": ""
+    }, {
+      "id": "0a91b79f-4e5a-4d4d-a4a0-50fca2c1bacb",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "3cd2006a-083d-4114-b5d6-f97390e54b0e",
@@ -336,6 +364,13 @@
       "target": "xpath=/html/body/div[1]/form/div[3]/center/h2/nav/a",
       "targets": [],
       "value": ""
+    }, {
+      "id": "d5b16318-ae04-4fe4-84f9-277fa2627476",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "d4dd21b2-87de-4137-85c7-e143d01eed58",
@@ -343,8 +378,8 @@
     "commands": [{
       "id": "1ac863c7-2114-489b-a4ab-16095a29e0d7",
       "comment": "",
-      "command": "setSpeed",
-      "target": "500",
+      "command": "pause",
+      "target": "1000",
       "targets": [],
       "value": ""
     }, {
@@ -362,10 +397,17 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "9242f2aa-96bd-4200-aa5d-eadaec86f1fe",
+      "id": "a08eac8f-a311-43aa-9362-225d1f84b175",
       "comment": "",
-      "command": "executeScript",
-      "target": "window.history.back()",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d798f7ec-0b6f-4d71-8c4b-4533488d978f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"navbarNav\"]/ul/li/a",
       "targets": [],
       "value": ""
     }]
@@ -375,22 +417,15 @@
     "commands": [{
       "id": "92e1611d-1ee1-4ca8-8175-e052b1f30ee2",
       "comment": "",
-      "command": "setSpeed",
-      "target": "500",
+      "command": "pause",
+      "target": "1000",
       "targets": [],
       "value": ""
     }, {
       "id": "8f7f8c3f-bb05-4acc-b5de-4839addbd063",
       "comment": "",
-      "command": "run",
-      "target": "login_positive_admin",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "92c18acb-1ef4-4227-9cb1-fdd7fc3b9e75",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=/html/body/div[2]/div/div/ul/li[1]/a[2]",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/addadmin/",
       "targets": [],
       "value": ""
     }, {
@@ -482,28 +517,14 @@
     "id": "d2e87f40-4f1d-48e9-8947-708b876302ef",
     "name": "remove_admin",
     "commands": [{
-      "id": "a0c77ca2-4409-4c1f-be0b-7f8ed714612e",
+      "id": "fea3f4b0-071d-493d-97db-b26e81d8dada",
       "comment": "",
-      "command": "setSpeed",
-      "target": "1000",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/addadmin/",
       "targets": [],
       "value": ""
     }, {
-      "id": "4265ebeb-376e-403b-93f4-b29ce3fe4227",
-      "comment": "",
-      "command": "run",
-      "target": "login_positive_admin",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "0a61b7b7-6a1e-47f4-9676-75abd346c119",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=/html/body/div[2]/div/div/ul/li[1]/a[2]",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "bc2f2e05-411c-49ce-9504-d6df9d090fce",
+      "id": "1650eda7-450d-4063-aba8-ec0316b228dc",
       "comment": "",
       "command": "click",
       "target": "xpath=//*[@id=\"navbarNav\"]/ul/li[4]/a",
@@ -558,6 +579,13 @@
       "target": "xpath=//*[@id=\"navbarNav\"]/ul/li[1]/a",
       "targets": [],
       "value": ""
+    }, {
+      "id": "67ef386d-dce6-4f97-a987-021be7713226",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "8ef83010-2113-4e28-9099-31f52a891eee",
@@ -565,15 +593,15 @@
     "commands": [{
       "id": "8b7883eb-45d4-4b46-8cfb-653a7364e366",
       "comment": "",
-      "command": "setSpeed",
+      "command": "pause",
       "target": "1000",
       "targets": [],
       "value": ""
     }, {
-      "id": "bfbc2166-b8f9-4770-bb30-8edab673762a",
+      "id": "91995eb7-c449-4aec-b1b7-d23feba311e6",
       "comment": "",
-      "command": "run",
-      "target": "login_positive_admin",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/adminpage/",
       "targets": [],
       "value": ""
     }, {
@@ -588,17 +616,17 @@
     "id": "d569dbd9-1e32-456a-af2f-a4bc2e7343c6",
     "name": "remove_customer",
     "commands": [{
-      "id": "c4919048-1e6a-4b3d-97f5-b10c389a8e7d",
+      "id": "04a00df4-5fbd-4d69-a19d-5b19e3a36670",
       "comment": "",
-      "command": "setSpeed",
+      "command": "pause",
       "target": "1000",
       "targets": [],
       "value": ""
     }, {
-      "id": "19ebeefc-af71-46cd-8322-461b191de2c2",
+      "id": "fed07edc-31ed-4055-83da-bcfe254a7ff1",
       "comment": "",
-      "command": "run",
-      "target": "manage_customers",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/displaycustomer/",
       "targets": [],
       "value": ""
     }, {
@@ -641,17 +669,17 @@
     "id": "7f5d8a48-f200-4245-a574-7078ecd4c980",
     "name": "add_driver",
     "commands": [{
-      "id": "9a4fc33b-c47c-4b41-bb33-3cce28e2fac7",
+      "id": "03fdfe0b-492d-45c7-9f2d-faf444567413",
       "comment": "",
-      "command": "run",
-      "target": "login_positive_admin",
+      "command": "pause",
+      "target": "1000",
       "targets": [],
       "value": ""
     }, {
-      "id": "280d3f4e-bc2a-4cd7-97ba-6b0acf9be34c",
+      "id": "ecd5e679-165a-4440-8550-81592e52190d",
       "comment": "",
-      "command": "click",
-      "target": "xpath=/html/body/div[2]/div/div/ul/li[1]/a[4]",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/adddriver/",
       "targets": [],
       "value": ""
     }, {
@@ -708,17 +736,17 @@
     "id": "49263266-59c6-4926-8c5c-fa273e1b4123",
     "name": "remove_driver",
     "commands": [{
-      "id": "a56217eb-8967-4aec-ba20-73f4d5ac57e0",
+      "id": "34adc0a5-6727-4324-a0af-a9324a5fd31b",
       "comment": "",
-      "command": "run",
-      "target": "login_positive_admin",
+      "command": "setSpeed",
+      "target": "1000",
       "targets": [],
       "value": ""
     }, {
-      "id": "175f892e-a1ff-4622-a8a9-a6464e75d40c",
+      "id": "3f9a3d01-0b1e-4029-bb23-b695cdbf54b4",
       "comment": "",
-      "command": "click",
-      "target": "xpath=/html/body/div[2]/div/div/ul/li[1]/a[4]",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/displaydrivers/",
       "targets": [],
       "value": ""
     }, {
@@ -742,6 +770,20 @@
       "target": "xpath=/html/body/div[2]/div/div/form/input[2]",
       "targets": [],
       "value": ""
+    }, {
+      "id": "e8a1a7d5-a37c-46bb-84c4-1a29cc928ba7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"navbarNav\"]/ul/li[1]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e115de4f-b069-4e23-a4ac-1bd5d8b0ce1d",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "512094a9-f145-49f4-9106-8b6002586db8",
@@ -749,22 +791,22 @@
     "commands": [{
       "id": "a040e18c-ad1c-4168-b85a-4f6db57a56cf",
       "comment": "",
-      "command": "setSpeed",
+      "command": "pause",
       "target": "1000",
       "targets": [],
       "value": ""
     }, {
       "id": "69234070-cda1-4773-8a8c-262ad4b51bf0",
       "comment": "",
-      "command": "run",
-      "target": "login_positive_admin",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/adminpage/",
       "targets": [],
       "value": ""
     }, {
       "id": "e8e8a83d-6876-46a9-84ff-bc5a660382a9",
       "comment": "",
       "command": "click",
-      "target": "xpath=//*[@id=\"navbarNav\"]/ul/li[4]/a",
+      "target": "xpath=/html/body/div[2]/div/div/ul/li[1]/center/a",
       "targets": [],
       "value": ""
     }]
@@ -772,24 +814,17 @@
     "id": "e1f26174-b48e-4ed5-999c-1376969a1f10",
     "name": "change_car_status",
     "commands": [{
-      "id": "59b80e17-43ba-4359-8991-39ba464964ae",
+      "id": "916e47c9-e32a-4855-aea9-f8ab759eb9ba",
       "comment": "",
-      "command": "setSpeed",
+      "command": "pause",
       "target": "1000",
       "targets": [],
       "value": ""
     }, {
-      "id": "45d0a7e3-566f-4347-9830-b3b3e810f88f",
+      "id": "6f8d52f4-6ddd-48eb-905d-de7c9dbffcf8",
       "comment": "",
-      "command": "run",
-      "target": "login_positive_admin",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "92897944-6e26-47b9-9177-17b7b72d115d",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=/html/body/div[2]/div/div/ul/li[1]/center/a",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/displaycarstatus/",
       "targets": [],
       "value": ""
     }, {
@@ -832,24 +867,17 @@
     "id": "addbf888-18c1-40df-b32f-32ab1a9c772e",
     "name": "change_driver_status",
     "commands": [{
-      "id": "64038e75-0362-4bc4-9aaf-3fa9f4c898f8",
+      "id": "869eac3a-36ae-4d19-8468-5d583e636780",
       "comment": "",
-      "command": "setSpeed",
+      "command": "pause",
       "target": "1000",
       "targets": [],
       "value": ""
     }, {
-      "id": "f6bf8945-797f-485c-b8f5-569c12e9e0ff",
+      "id": "68c57ac9-6bcb-4634-8246-be30dea005cb",
       "comment": "",
-      "command": "click",
-      "target": "xpath=/html/body/div[2]/div/div/ul/li[1]/center/a",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "4f45ea72-9e82-4f53-9b3c-d4a03b2c7e98",
-      "comment": "",
-      "command": "run",
-      "target": "login_positive_admin",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/displaydriverstatus/",
       "targets": [],
       "value": ""
     }, {
@@ -894,15 +922,8 @@
     "commands": [{
       "id": "c0be690d-be68-436b-812a-be09caa55681",
       "comment": "",
-      "command": "run",
-      "target": "login_positive_admin",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "068749fa-accc-4cb6-8997-89dc068c29b4",
-      "comment": "",
-      "command": "click",
-      "target": "xpath=/html/body/div[2]/div/div/ul/li[2]/a[1]",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/addcar/",
       "targets": [],
       "value": ""
     }, {
@@ -961,22 +982,29 @@
       "target": "xpath=//*[@id=\"navbarNav\"]/ul/li[3]/a",
       "targets": [],
       "value": ""
+    }, {
+      "id": "752f5e71-d96f-4cb4-a5a9-87f9678ed615",
+      "comment": "",
+      "command": "pause",
+      "target": "500",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "4e07631b-3bff-42b2-8405-400ee1091835",
     "name": "remove_car",
     "commands": [{
-      "id": "5a95129a-e33f-47b1-85c3-21fbd40259cb",
+      "id": "087c3ffa-64bb-4b9d-a11c-0270afc15e95",
       "comment": "",
-      "command": "run",
-      "target": "login_positive_admin",
+      "command": "pause",
+      "target": "1000",
       "targets": [],
       "value": ""
     }, {
-      "id": "57526e5d-e424-4301-aba2-4ef8bd567b99",
+      "id": "5f6085c5-48b4-4d33-87f5-bbcde2f8339d",
       "comment": "",
-      "command": "click",
-      "target": "xpath=/html/body/div[2]/div/div/ul/li[2]/a[1]",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/displaycars/",
       "targets": [],
       "value": ""
     }, {
@@ -1007,6 +1035,13 @@
       "target": "xpath=//*[@id=\"navbarNav\"]/ul/li[3]/a",
       "targets": [],
       "value": ""
+    }, {
+      "id": "e5ad9ce7-1969-4e95-ad9b-6a8ee447b1ee",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"navbarNav\"]/ul/li[1]/a",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "7d85be0a-ee1c-4cd0-8885-c846242b51d0",
@@ -1014,8 +1049,8 @@
     "commands": [{
       "id": "1160c360-7ba8-41ff-a3a6-39648232f79f",
       "comment": "",
-      "command": "run",
-      "target": "login_positive_admin",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/adminpage/",
       "targets": [],
       "value": ""
     }, {
@@ -1025,6 +1060,13 @@
       "target": "xpath=/html/body/div[2]/div/div/ul/li[2]/a[2]",
       "targets": [],
       "value": ""
+    }, {
+      "id": "587e1f2b-933a-4aaa-b67e-fdbb25ee3071",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "0b392792-56d1-477a-972b-423a2f027155",
@@ -1032,8 +1074,8 @@
     "commands": [{
       "id": "21f8035c-7212-4bd1-a0f6-5ed3ca0d4def",
       "comment": "",
-      "command": "run",
-      "target": "login_positive_admin",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/adminpage/",
       "targets": [],
       "value": ""
     }, {
@@ -1041,6 +1083,13 @@
       "comment": "",
       "command": "click",
       "target": "xpath=/html/body/div[2]/div/div/ul/li[2]/a[3]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b80db8c-e20f-4c16-a208-369352ec90e8",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
       "targets": [],
       "value": ""
     }]
@@ -1052,6 +1101,13 @@
       "comment": "",
       "command": "open",
       "target": "http://127.0.0.1:5000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6c54a86-9c46-4e3b-bdf3-6a1ea1a39254",
+      "comment": "",
+      "command": "pause",
+      "target": "500",
       "targets": [],
       "value": ""
     }, {
@@ -1138,6 +1194,13 @@
       "target": "xpath=/html/body/div[2]/div/form/input[10]",
       "targets": [],
       "value": ""
+    }, {
+      "id": "d21dbcdc-602f-4111-82dc-aef4869efc9c",
+      "comment": "",
+      "command": "pause",
+      "target": "500",
+      "targets": [],
+      "value": ""
     }]
   }, {
     "id": "1fc30673-89d4-43de-9594-89847bd19e2a",
@@ -1145,15 +1208,15 @@
     "commands": [{
       "id": "e6d4a8d6-3856-442e-a6b8-12828538aefe",
       "comment": "",
-      "command": "setSpeed",
+      "command": "pause",
       "target": "1000",
       "targets": [],
       "value": ""
     }, {
       "id": "33ecb37e-8cd7-4072-811c-d50d71494881",
       "comment": "",
-      "command": "run",
-      "target": "login_positive_admin",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/adminpage/",
       "targets": [],
       "value": ""
     }, {
@@ -1164,10 +1227,676 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "a64e90ab-4678-4056-9b3f-da0129f57ff5",
+      "id": "2bc7127b-8023-451b-be4e-546c13f7c091",
       "comment": "",
-      "command": "",
-      "target": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1d7fa3c9-59a6-4a19-a730-6664318bcbb0",
+    "name": "main_test_admin",
+    "commands": [{
+      "id": "85e8c2c0-049c-4989-9c61-396e7d966980",
+      "comment": "",
+      "command": "run",
+      "target": "admin_dashboard",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a49182c9-5422-431a-8dfc-07c071329742",
+      "comment": "",
+      "command": "run",
+      "target": "manage_admin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "643318bd-82bb-4c75-b27b-771547a3d77d",
+      "comment": "",
+      "command": "run",
+      "target": "add_admin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a77974c6-326e-4535-b1c5-794d22549a3e",
+      "comment": "",
+      "command": "run",
+      "target": "remove_admin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "633100f0-2a79-4595-aba4-01c94a95c375",
+      "comment": "",
+      "command": "run",
+      "target": "manage_customers",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b91f517d-3c3d-4199-a0b5-17603770a14a",
+      "comment": "",
+      "command": "run",
+      "target": "remove_customer",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d849f915-1682-488b-9fb2-35c55490c8b2",
+      "comment": "",
+      "command": "run",
+      "target": "manage_driver",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17628a6f-aac9-4f54-9cd8-018bd445811f",
+      "comment": "",
+      "command": "run",
+      "target": "add_driver",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66a0ff3c-1efe-40d0-8613-07da123bbda7",
+      "comment": "",
+      "command": "run",
+      "target": "remove_driver",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "43e5d673-2748-40cb-b572-41f427aafb55",
+      "comment": "",
+      "command": "run",
+      "target": "car_driver_availability",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0eddcef-801d-40a1-8ca1-2cfed5b1a435",
+      "comment": "",
+      "command": "run",
+      "target": "change_car_status",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87498564-4e4e-4fc7-9365-c2a9ee70b6d8",
+      "comment": "",
+      "command": "run",
+      "target": "change_driver_status",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "210d5175-3077-49a1-9cd2-e717f86664cf",
+      "comment": "",
+      "command": "run",
+      "target": "manage_car",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c7e4bc2-0b2d-42cf-8b59-4db9d409d8a5",
+      "comment": "",
+      "command": "run",
+      "target": "add_car",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90b0715d-9c65-481d-85d7-1ccfa308b462",
+      "comment": "",
+      "command": "run",
+      "target": "remove_car",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7570315-78ed-42c2-88c2-aba3612ac07a",
+      "comment": "",
+      "command": "run",
+      "target": "manage_feedback",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5ad90194-798c-43a9-9aa9-b96f37534bf5",
+      "comment": "",
+      "command": "run",
+      "target": "login_history",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf43c5b5-1c6d-499a-9103-5acca9339b78",
+      "comment": "",
+      "command": "run",
+      "target": "manage_booking",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc95be6e-30f1-4194-a931-fc4a8af68029",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"navbarNav\"]/ul/li/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "09f3af35-3ddb-4f13-be6d-42030d33d0f4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[2]/div/div/ul/li[3]/a",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b640cf44-4f20-477e-b5a4-92c63cffe7cb",
+    "name": "manage_driver",
+    "commands": [{
+      "id": "8f3dba64-96e1-4882-869f-63d0a2d9ad18",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2cd4da7f-acfe-4f50-9139-411a9a2f48b0",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/adminpage/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b07882e2-71c0-4a72-ab8e-0fc477192f78",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[2]/div/div/ul/li[1]/a[4]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "00a89ed1-6434-4f85-92e1-2d4e0448a7e9",
+    "name": "manage_car",
+    "commands": [{
+      "id": "4b118d3d-ff11-45e8-bfa6-d5e82c04ee5b",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7e2c1cc9-212f-4125-913a-2dda697775e1",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/adminpage/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6bcc9054-f78e-4a6f-8e1d-980473551281",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[2]/div/div/ul/li[2]/a[1]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69e583fa-2899-4eeb-8a53-7f633ab6f3c7",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9b94b404-4952-4d10-8ef6-808439cb00f1",
+    "name": "manage_admin",
+    "commands": [{
+      "id": "5954c4f4-48ac-47bf-adbc-8185167c2d6d",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "272e70a1-7eef-407a-90b7-4c09a85fdf14",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/adminpage/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4844a813-5f33-4d27-bc93-6bfe4937aae8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[2]/div/div/ul/li[1]/a[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e97134ba-ffb5-489b-a91b-274c33d74019",
+      "comment": "",
+      "command": "pause",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "774c3a4f-3b7f-40f4-8ff5-3883c8584782",
+    "name": "login_negative_customer",
+    "commands": [{
+      "id": "dd7a0cc6-57a2-49c3-bb77-e54b66e6e047",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9d07c351-4b2d-4a40-93cd-c5b1a22ade7c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div/div[3]/span[1]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7ef7ff0-c2e5-4bc7-b4e1-1ca26f56c5a5",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"name\"]",
+      "targets": [],
+      "value": "abiali"
+    }, {
+      "id": "dac7ee22-c190-4531-a626-d5f73c87ea42",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//*[@id=\"passw\"]",
+      "targets": [],
+      "value": "password"
+    }, {
+      "id": "5dea39e0-ca02-4566-a621-4576f47fe338",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div/div[3]/form/input",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "10686de4-875e-457f-a195-befa60ee0293",
+    "name": "forget_password",
+    "commands": [{
+      "id": "14241340-dbfa-4bdd-84f6-e31a6cb12a1a",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "1000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbdd9dc1-769c-463f-b1f5-4be0e4148684",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3c12a8d-79ed-4dfc-bf77-faf02143533a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div/div[3]/form/div[3]/ul/li/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2bf164a-7bdb-480f-883f-e4b5ce3ad72d",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[2]/div/form/input[1]",
+      "targets": [],
+      "value": "abiali"
+    }, {
+      "id": "80fa1dc2-c809-47a8-9c43-9b3608b05749",
+      "comment": "",
+      "command": "select",
+      "target": "id=squestion",
+      "targets": [],
+      "value": "Your First School Name"
+    }, {
+      "id": "9e303395-23f7-432f-ac9c-ad0421059894",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[2]/div/form/input[2]",
+      "targets": [],
+      "value": "chavara"
+    }, {
+      "id": "d6e6254b-7bfe-48b3-9dea-0cb40ce1e8a2",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[2]/div/form/input[3]",
+      "targets": [],
+      "value": "abiali123"
+    }, {
+      "id": "651007ce-e5aa-426a-857c-782622ec38cf",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/div[2]/div/form/input[4]",
+      "targets": [],
+      "value": "abiali123"
+    }, {
+      "id": "488a6910-ee17-43c6-a15d-2dac36eb0097",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[2]/div/form/input[5]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e8271e95-21b8-4256-a0dd-b1859e632a8b",
+    "name": "test_cust_neg",
+    "commands": [{
+      "id": "43ba8203-2b58-4c53-9e5c-4ccfb0d5fe4c",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70e2ac57-bc2d-415c-88b8-d126cac0c411",
+      "comment": "",
+      "command": "pause",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12883078-9b69-4ad2-a9a5-55a3681df33f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div/div[3]/span[2]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c60a5f81-7bff-4745-bf96-3262e8cf69fb",
+      "comment": "",
+      "command": "type",
+      "target": "name=FName",
+      "targets": [],
+      "value": "varun"
+    }, {
+      "id": "16456ef9-8d17-46d9-827d-191abf482874",
+      "comment": "",
+      "command": "type",
+      "target": "name=lName",
+      "targets": [],
+      "value": "chandak"
+    }, {
+      "id": "cc55d676-5540-46c5-92ee-8c948bbede94",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [],
+      "value": "varun123"
+    }, {
+      "id": "5324ddee-eff5-4549-b605-5adb8743ce33",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "varun@gmail.com"
+    }, {
+      "id": "e28ff839-ad8e-4c99-8102-571136e9ce6f",
+      "comment": "",
+      "command": "type",
+      "target": "name=PhoneNumber",
+      "targets": [],
+      "value": "98456623"
+    }, {
+      "id": "3add5279-2c6b-4ae0-bbe9-fa71b714609d",
+      "comment": "",
+      "command": "type",
+      "target": "name=age",
+      "targets": [],
+      "value": "21"
+    }, {
+      "id": "791b5a0d-0e4b-4bc5-9ddb-922593cc2318",
+      "comment": "",
+      "command": "type",
+      "target": "name=Password",
+      "targets": [],
+      "value": "varun"
+    }, {
+      "id": "cbfad18a-f6b7-4196-bb5b-30f211018dc4",
+      "comment": "",
+      "command": "type",
+      "target": "name=ConfirmPassword",
+      "targets": [],
+      "value": "varun"
+    }, {
+      "id": "1b88615a-abcb-4d8f-a85d-01435c809a34",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=//*[@id=\"squestion\"]",
+      "targets": [],
+      "value": "Your First Phone's Brand Name"
+    }, {
+      "id": "763cdc20-caeb-4158-978a-a471c37486f0",
+      "comment": "",
+      "command": "type",
+      "target": "name=answer",
+      "targets": [],
+      "value": "sony"
+    }, {
+      "id": "34671165-67d2-4e3f-8d0a-287879ca7c4b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[2]/div/form/input[10]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96a6fe78-d936-4595-b0e8-5c7f4ed558ac",
+      "comment": "",
+      "command": "pause",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6dfa3ed0-2b4e-4a1d-857d-95fc25919556",
+    "name": "test_cust_neg1",
+    "commands": [{
+      "id": "1e728fae-42e5-4277-80ef-a013636d801e",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa685743-0d8e-4325-bae0-bb40dd9b7654",
+      "comment": "",
+      "command": "pause",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4a6aedc-4485-4036-a4aa-46b2170bb440",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div/div[3]/span[2]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c6b84a5-b9a5-4e7a-a8f7-264b12fd17d5",
+      "comment": "",
+      "command": "type",
+      "target": "name=FName",
+      "targets": [],
+      "value": "varun23"
+    }, {
+      "id": "68db8252-0783-4e8f-9fa2-aa01dd2f0ffe",
+      "comment": "",
+      "command": "type",
+      "target": "name=lName",
+      "targets": [],
+      "value": "chandak11"
+    }, {
+      "id": "13ebe3d2-a724-4258-b294-2c5e17f48c3e",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [],
+      "value": "varun123"
+    }, {
+      "id": "d0d00ac8-bda0-42f3-957b-283814583fa2",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "varun@gmail.com"
+    }, {
+      "id": "543c9887-cfec-4a16-91f2-92af069fe882",
+      "comment": "",
+      "command": "type",
+      "target": "name=PhoneNumber",
+      "targets": [],
+      "value": "98456623"
+    }, {
+      "id": "af091033-e3e0-46db-a4cd-565bea171e6a",
+      "comment": "",
+      "command": "type",
+      "target": "name=age",
+      "targets": [],
+      "value": "21"
+    }, {
+      "id": "1e676107-cf16-4de2-a473-30e13a564cb4",
+      "comment": "",
+      "command": "type",
+      "target": "name=Password",
+      "targets": [],
+      "value": "varun"
+    }, {
+      "id": "25e8cc21-3166-475e-bd68-d4bb0baaa0a6",
+      "comment": "",
+      "command": "type",
+      "target": "name=ConfirmPassword",
+      "targets": [],
+      "value": "varun"
+    }, {
+      "id": "1d2b48b1-8271-439e-8e05-abe1fabeecf1",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=//*[@id=\"squestion\"]",
+      "targets": [],
+      "value": "Your First Phone's Brand Name"
+    }, {
+      "id": "7dc9dcde-f52f-4eb0-9027-ca75e2c680df",
+      "comment": "",
+      "command": "type",
+      "target": "name=answer",
+      "targets": [],
+      "value": "sony"
+    }, {
+      "id": "dcc08a85-ab17-4d91-97e6-a17615a2c499",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[2]/div/form/input[10]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f65083b-9c31-4b1d-83c9-ab8d2c68e02e",
+      "comment": "",
+      "command": "pause",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f3be36ca-d177-423a-b746-2e0def988619",
+    "name": "test_cust_neg2",
+    "commands": [{
+      "id": "6c77d3fd-eb27-4df8-b054-0554ab2eaa44",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5000/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad4fc16d-b734-4a38-a0ba-77302015af29",
+      "comment": "",
+      "command": "pause",
+      "target": "500",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a88489f5-62a6-4012-a73e-5fdc728c0b49",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[1]/div/div[3]/span[2]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7315b78f-0458-4a71-b293-dc214a435397",
+      "comment": "",
+      "command": "type",
+      "target": "name=FName",
+      "targets": [],
+      "value": "varun"
+    }, {
+      "id": "3bfc4caa-8ec1-43ed-bdf7-d3dba30b54f6",
+      "comment": "",
+      "command": "type",
+      "target": "name=lName",
+      "targets": [],
+      "value": "chandak"
+    }, {
+      "id": "8b23e1a3-3563-4386-9dd4-45e8c631d5ff",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [],
+      "value": "varun123"
+    }, {
+      "id": "cab0ef1b-ef0c-4e9c-9518-54314a5fda46",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [],
+      "value": "varungmail.com"
+    }, {
+      "id": "47fba6ef-6f8b-43b6-8f71-269aba46853c",
+      "comment": "",
+      "command": "type",
+      "target": "name=PhoneNumber",
+      "targets": [],
+      "value": "9845662323"
+    }, {
+      "id": "c222f201-6d5e-4208-8efa-a606565144b4",
+      "comment": "",
+      "command": "type",
+      "target": "name=age",
+      "targets": [],
+      "value": "21"
+    }, {
+      "id": "f010c504-8652-423f-9137-f46a10ab1a4e",
+      "comment": "",
+      "command": "type",
+      "target": "name=Password",
+      "targets": [],
+      "value": "varun"
+    }, {
+      "id": "c957bb36-060c-4eae-9ba1-f7b2c22f1b92",
+      "comment": "",
+      "command": "type",
+      "target": "name=ConfirmPassword",
+      "targets": [],
+      "value": "varun"
+    }, {
+      "id": "d0189962-7300-4b7a-9615-47f38d540628",
+      "comment": "",
+      "command": "select",
+      "target": "xpath=//*[@id=\"squestion\"]",
+      "targets": [],
+      "value": "Your First Phone's Brand Name"
+    }, {
+      "id": "ad3cb5e7-edc7-4618-bdd3-1aa179debfbc",
+      "comment": "",
+      "command": "type",
+      "target": "name=answer",
+      "targets": [],
+      "value": "sony"
+    }, {
+      "id": "c58d9790-5bd1-4000-b2ed-1d62fdc783d3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[2]/div/form/input[10]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88d3d771-0b1a-47f1-80cc-6ba05d60ad02",
+      "comment": "",
+      "command": "pause",
+      "target": "500",
       "targets": [],
       "value": ""
     }]
